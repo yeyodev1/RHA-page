@@ -1,16 +1,16 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
 defineProps({
-  msg: String
-})
+  msg: String,
+});
 
-const count = ref(0)
+const count = ref(0);
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
-
+  <p class="bg-red-700">holaaaaa</p>
   <p>
     Recommended IDE setup:
     <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>
