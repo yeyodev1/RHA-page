@@ -1,5 +1,5 @@
 <template>
-    <header class="h-16 w-full flex justify-between bg-tertiaryRHA">
+    <header class="h-16 w-full flex justify-between">
         <figure class="w-16 h-9 flex justify-center relative top-5 left-10">
             <img
                 src="../../assets/logo.png"
