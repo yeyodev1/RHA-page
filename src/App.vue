@@ -1,12 +1,12 @@
 <template>
-  <the-header />
+    <the-header />
 </template>
 
 <script>
-import theHeader from "./components/global/theHeader.vue";
+import TheHeader from "./components/global/TheHeader.vue";
 export default {
-  components: {
-    theHeader,
-  },
+    components: {
+        TheHeader,
+    },
 };
 </script>
