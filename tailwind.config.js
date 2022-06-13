@@ -11,6 +11,8 @@ module.exports = {
             backgroundRHA: "#DEE0E0",
             whiteRHA: "#F0F2F2",
             blackRHA: "#04151F",
+            grayRHA: "#BBBAB9",
+            alert: "#C40000",
         },
         fontFamily: {
             principal: ["Roboto", ...defaultTheme.fontFamily.sans],
