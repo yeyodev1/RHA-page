@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import TheHeader from "./components/Global/TheHeader.vue";
+import TheHeader from "./components/Home/TheHeader.vue";
 import TheHero from "./components/Home/TheHero.vue";
 export default {
     components: {
