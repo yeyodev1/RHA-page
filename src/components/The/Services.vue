@@ -1,7 +1,7 @@
 <template>
     <div class="w-full">
         <!-- SERVICE DETAILS SECTION -->
-        <div class="w-2/5 bg-backgroundRHA">
+        <div class="w-2/5">
             <p>{{ service }}</p>
         </div>
     </div>
