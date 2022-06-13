@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mdi/js": "^6.7.96",
     "vue": "^3.2.25"
   },
   "devDependencies": {
