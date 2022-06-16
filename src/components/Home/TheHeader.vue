@@ -1,38 +1,40 @@
 <template>
-    <header
-        class="h-16 w-full flex justify-between max-w-7xl mx-auto hover:bg-whiteRHA"
-    >
-        <figure class="w-16 h-9 flex justify-center relative top-5 left-10">
-            <img
-                src="../../assets/logo.png"
-                alt="logo de reyes, hijos y asociados"
-            />
-        </figure>
-        <div class="flex w-1/4 justify-between">
-            <button>
-                <p class="text-blackRHA">Nosotros</p>
-            </button>
-            <button>
-                <p class="text-blackRHA">Servicios</p>
-            </button>
-            <button>
-                <p class="text-blackRHA">Contacto</p>
-            </button>
-        </div>
-        <div
-            class="bg-secondaryRHA hover:bg-tertiaryRHA w-36 h-11 relative rounded-xl top-4 right-10"
-        >
-            <button
-                class="w-full h-11 flex justify-center items-center text-whiteRHA"
-                v-for="(icon, index) in icons"
-                :key="index"
-            >
-                Cotizar
-                <Icons
-                    :name="icon.name"
-                    class="w-4 h-4 hover:w-8 hover:h-6 text-whiteRHA"
-                />
-            </button>
+    <header class="w-full flex justify-between hover:bg-whiteRHA header">
+        <div class="max-w-7xl w-full mx-auto flex justify-between px-10 py-5">
+            <!-- SPACE WHERE IS THE LOGO -->
+            <div class="w-16 h-9 flex justify-center logo" />
+            <!-- BUTTONS LINKED TO REST TO THE PAGE -->
+            <div class="flex w-1/4 justify-between">
+                <button
+                    class="border-b-0 hover:border-b hover:border-secondaryRHA hover:transition-all"
+                >
+                    <p class="text-blackRHA">Nosotros</p>
+                </button>
+                <button
+                    class="border-b-0 hover:border-b hover:border-secondaryRHA hover:transition-all"
+                >
+                    <p class="text-blackRHA">Servicios</p>
+                </button>
+                <button
+                    class="border-b-0 hover:border-b hover:border-secondaryRHA hover:transition-all"
+                >
+                    <p class="text-blackRHA">Contacto</p>
+                </button>
+            </div>
+            <!-- BUTTON TO CONSULT THE COSTS -->
+            <div class="bg-secondaryRHA hover:bg-tertiaryRHA w-36">
+                <button
+                    class="w-full h-11 flex justify-center items-center text-whiteRHA"
+                    v-for="(icon, index) in icons"
+                    :key="index"
+                >
+                    Cotizar
+                    <Icons
+                        :name="icon.name"
+                        class="w-4 h-4 hover:w-8 hover:h-6 transition-all text-whiteRHA"
+                    />
+                </button>
+            </div>
         </div>
     </header>
 </template>
@@ -51,4 +53,19 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+/* CLASS WITH THE INITIAL LOGO */
+.logo {
+    background: url("../../assets/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/* CLASS TO CHANGE THE LOGO */
+.header:hover .logo {
+    background: url("../../assets/logoHover.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+</style>
