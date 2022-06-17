@@ -4,21 +4,21 @@
             <!-- SPACE WHERE IS THE LOGO -->
             <div class="w-16 h-9 flex justify-center logo" />
             <!-- BUTTONS LINKED TO REST TO THE PAGE -->
-            <div class="flex w-1/4 justify-between">
+            <div class="flex w-1/4 justify-between color-font">
                 <button
                     class="border-b-0 hover:border-b hover:border-secondaryRHA hover:transition-all"
                 >
-                    <p class="text-blackRHA">Nosotros</p>
+                    <p class="color-font font-principal">Nosotros</p>
                 </button>
                 <button
                     class="border-b-0 hover:border-b hover:border-secondaryRHA hover:transition-all"
                 >
-                    <p class="text-blackRHA">Servicios</p>
+                    <p class="color-font font-principal">Servicios</p>
                 </button>
                 <button
                     class="border-b-0 hover:border-b hover:border-secondaryRHA hover:transition-all"
                 >
-                    <p class="text-blackRHA">Contacto</p>
+                    <p class="color-font font-principal">Contacto</p>
                 </button>
             </div>
             <!-- BUTTON TO CONSULT THE COSTS -->
@@ -67,5 +67,12 @@ export default {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+/* CLASS WITH THE INITIAL FONT COLOR */
+.color-font {
+    color: #f0f2f2;
+}
+.header:hover .color-font {
+    color: #04151f;
 }
 </style>
