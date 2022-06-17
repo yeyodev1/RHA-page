@@ -1,5 +1,5 @@
 <template>
-    <div class="background">
+    <div id="background" class="w-full mx-auto bg-no-repeat bg-center bg-cover">
         <the-header />
         <the-hero />
     </div>
@@ -16,4 +16,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+#background {
+    background-image: url("./assets/Images/background.png");
+}
+</style>
