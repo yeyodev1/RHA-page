@@ -2,7 +2,7 @@
     <div class="w-full">
         <!-- SERVICE DETAILS SECTION -->
         <div :id="getId" class="w-2/5">
-            <p>{{ service }}</p>
+            <p class="text-5xl text-whiteRHA font-principal">{{ service }}</p>
         </div>
     </div>
 </template>
