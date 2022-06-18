@@ -1,7 +1,7 @@
 <template>
     <div class="w-full">
         <!-- SERVICE DETAILS SECTION -->
-        <div :class="getClass" class="w-2/5">
+        <div :id="getId" class="w-2/5">
             <p>{{ service }}</p>
         </div>
     </div>
@@ -21,7 +21,7 @@ export default {
         },
     },
     computed: {
-        getClass() {
+        getId() {
             return this.id;
         },
     },
