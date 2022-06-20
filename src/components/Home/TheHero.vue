@@ -1,7 +1,7 @@
 <template>
     <div class="pt-48 pb-72 flex flex-col">
         <div
-            class="lg:font-secondary max-w-7xl w-full mx-auto lg:px-10 lg:py-5 flex lg:h-80 mask"
+            class="max-w-7xl w-full mx-auto lg:px-10 lg:py-5 flex lg:h-80 mask overflow-x-hidden"
         >
             <div
                 id="container"
@@ -12,7 +12,7 @@
                 <the-services
                     :service="service.service"
                     :id="service.id"
-                    class=""
+                    class="mx-10"
                 >
                 </the-services>
             </div>
@@ -68,32 +68,32 @@ export default {
     animation: slide 20s infinite;
 }
 
-/* @keyframes slide {
+@keyframes slide {
     0% {
-        margin-left: 0px;
+        padding-right: 0;
     }
     20% {
-        margin-left: 0px;
+        padding-right: 0;
     }
     25% {
-        margin-left: -700px;
+        padding-right: 100%;
     }
     45% {
-        margin-left: -700px;
+        padding-right: 100%;
     }
     50% {
-        margin-left: -1400px;
+        padding-right: 200%;
     }
     70% {
-        margin-left: -1400px;
+        padding-right: 200%;
     }
     75% {
-        margin-left: -2100px;
+        padding-right: 400%;
     }
     95% {
-        margin-left: -2100px;
+        padding-right: 400%;
     }
-} */
+}
 /* .mask {
     clip-path: inset(5% 73% 15% 0);
 } */
