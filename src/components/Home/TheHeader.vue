@@ -1,6 +1,24 @@
 <template>
-    <header class="w-full flex justify-between hover:bg-whiteRHA header">
-        <div class="max-w-7xl w-full mx-auto flex justify-between px-10 py-5">
+    <header class="w-full flex justify-between header">
+        <!-- HEADER TO SMALL ADVICES  -->
+        <div
+            class="w-full h-8 flex lg:hidden justify-between items-center mx-5 sm:hidden"
+        >
+            <!-- SPACE WHERE IS THE LOGO -->
+            <div class="w-6 h-4 flex justify-center small-logo"></div>
+            <!-- BUTTON -->
+            <button class="">
+                <div class="flex w-5 h-5 flex-col">
+                    <div class="w-full h-5 border-b border-whiteRHA"></div>
+                    <div class="w-full h-5 border-b border-whiteRHA"></div>
+                    <div class="w-full h-5 border-b border-whiteRHA"></div>
+                </div>
+            </button>
+        </div>
+        <!-- HEADER TO LG ADVICES -->
+        <div
+            class="max-w-7xl w-full mx-auto justify-between px-10 py-5 lg:flex hidden"
+        >
             <!-- SPACE WHERE IS THE LOGO -->
             <div class="w-16 h-9 flex justify-center logo" />
             <!-- BUTTONS LINKED TO REST TO THE PAGE -->
@@ -74,5 +92,12 @@ export default {
 }
 .header:hover .color-font {
     color: #04151f;
+}
+/* CLASS WITH THE LOGO IN SMALL ADVICES */
+.small-logo {
+    background: url("../../assets/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 </style>
