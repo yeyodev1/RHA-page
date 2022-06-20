@@ -1,8 +1,11 @@
 <template>
-    <div class="pt-96 pb-72">
-        <div class="font-secondary max-w-7xl w-full mx-auto px-10 py-5 slider">
+    <div class="pt-48 pb-72 flex flex-col">
+        <div
+            class="lg:font-secondary max-w-7xl w-full mx-auto lg:px-10 lg:py-5 flex lg:h-80 mask"
+        >
             <div
-                class="w-full h-20 flex justify-center items-center"
+                id="container"
+                class="w-full flex justify-center items-center"
                 v-for="(service, index) in services"
                 :key="index"
             >
@@ -14,9 +17,9 @@
                 </the-services>
             </div>
         </div>
-        <div class="menu w-2/5 px-10 py-5">
-            <li>
-                <a href="#item-1" class="w-6">1</a>
+        <div class="menu max-w-7xl w-full mx-auto px-10 py-5">
+            <li class="">
+                <a href="#item-1" class="">1</a>
             </li>
             <li>
                 <a href="#item-2">2</a>
@@ -61,25 +64,37 @@ export default {
 </script>
 
 <style scoped>
-div,
-li {
-    list-style: none;
-}
-div.slider {
-    position: relative;
-}
-div.slider div {
-    position: absolute;
-    opacity: 0;
-    width: inherit;
-    height: inherit;
-    transition: opacity 0.5s;
-}
-div.slider div:first-child {
-    opacity: 1;
+#container div {
+    animation: slide 20s infinite;
 }
 
-div.slider div the-services:target {
-    opacity: 1;
-}
+/* @keyframes slide {
+    0% {
+        margin-left: 0px;
+    }
+    20% {
+        margin-left: 0px;
+    }
+    25% {
+        margin-left: -700px;
+    }
+    45% {
+        margin-left: -700px;
+    }
+    50% {
+        margin-left: -1400px;
+    }
+    70% {
+        margin-left: -1400px;
+    }
+    75% {
+        margin-left: -2100px;
+    }
+    95% {
+        margin-left: -2100px;
+    }
+} */
+/* .mask {
+    clip-path: inset(5% 73% 15% 0);
+} */
 </style>
