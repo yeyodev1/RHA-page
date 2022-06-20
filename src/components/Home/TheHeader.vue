@@ -1,5 +1,7 @@
 <template>
-    <header class="w-full flex justify-between header">
+    <header
+        class="w-full flex justify-between header hover:bg-backgroundRHA hover:transition-all"
+    >
         <!-- HEADER TO SMALL ADVICES  -->
         <div
             class="w-full h-8 flex lg:hidden justify-between items-center mx-5 sm:hidden"
@@ -55,7 +57,7 @@
                 </button>
             </div>
             <!-- BUTTON TO CONSULT THE COSTS -->
-            <div class="bg-secondaryRHA hover:bg-tertiaryRHA w-36">
+            <div class="bg-secondaryRHA hover:bg-tertiaryRHA w-36 rounded-xl">
                 <button
                     class="w-full h-11 flex justify-center items-center text-whiteRHA"
                     v-for="(icon, index) in icons"
@@ -64,7 +66,7 @@
                     Cotizar
                     <Icons
                         :name="icon.name"
-                        class="w-4 h-4 hover:w-8 hover:h-6 transition-all text-whiteRHA"
+                        class="w-4 h-4 hover:w-7 hover:h-7 transition-all text-whiteRHA"
                     />
                 </button>
             </div>
