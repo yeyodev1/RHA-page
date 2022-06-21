@@ -12,7 +12,7 @@
                 <the-services
                     :service="service.service"
                     :id="service.id"
-                    class="mx-10"
+                    class="mx-11"
                 >
                 </the-services>
             </div>
@@ -65,36 +65,36 @@ export default {
 
 <style scoped>
 #container div {
-    animation: slide 20s infinite;
+    animation: slide 15s infinite;
 }
 
 @keyframes slide {
     0% {
-        padding-right: 0;
+        padding-right: 0%;
     }
     20% {
-        padding-right: 0;
+        padding-right: 0%;
     }
     25% {
-        padding-right: 100%;
+        padding-right: 230%;
     }
     45% {
-        padding-right: 100%;
+        padding-right: 230%;
     }
     50% {
-        padding-right: 200%;
+        padding-right: 400%;
     }
     70% {
-        padding-right: 200%;
+        padding-right: 400%;
     }
     75% {
-        padding-right: 400%;
+        padding-right: 650%;
     }
     95% {
-        padding-right: 400%;
+        padding-right: 650%;
     }
 }
-/* .mask {
-    clip-path: inset(5% 73% 15% 0);
-} */
+.mask {
+    clip-path: inset(0 29% 0 0);
+}
 </style>
