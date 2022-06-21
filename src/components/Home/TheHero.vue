@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-48 pb-72 flex flex-col">
+    <div class="pt-28 pb-28 lg:pt-48 :pb-72 flex flex-col-reverse w-full">
         <div
             class="max-w-7xl w-full mx-auto lg:px-10 lg:py-5 flex lg:h-80 mask overflow-x-hidden"
         >
@@ -17,19 +17,28 @@
                 </the-services>
             </div>
         </div>
-        <div class="menu max-w-7xl w-full mx-auto px-10 py-5">
-            <li class="">
-                <a href="#item-1" class="">1</a>
-            </li>
-            <li>
-                <a href="#item-2">2</a>
-            </li>
-            <li>
-                <a href="#item-3">3</a>
-            </li>
-            <li>
-                <a href="#item-4">4</a>
-            </li>
+        <!-- POINTS CONNECTED TO THE SLIDS -->
+        <div class="max-w-7xl w-14 h-3 mx-auto flex justify-between ml-14 mb-9">
+            <a href="item#1">
+                <button
+                    class="list-none w-2 h-2 bg-grayRHA rounded-full active:bg-tertiaryRHA"
+                />
+            </a>
+            <a href="item#2">
+                <button
+                    class="list-none w-2 h-2 bg-grayRHA rounded-full active:bg-tertiaryRHA"
+                />
+            </a>
+            <a href="item#3">
+                <button
+                    class="list-none w-2 h-2 bg-grayRHA rounded-full active:bg-tertiaryRHA"
+                />
+            </a>
+            <a href="item#4">
+                <button
+                    class="list-none w-2 h-2 bg-grayRHA rounded-full active:bg-tertiaryRHA"
+                />
+            </a>
         </div>
     </div>
 </template>
