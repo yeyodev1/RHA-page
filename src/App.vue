@@ -3,15 +3,18 @@
         <the-header />
         <the-hero />
     </div>
+    <About />
 </template>
 
 <script>
 import TheHeader from "./components/Home/TheHeader.vue";
 import TheHero from "./components/Home/TheHero.vue";
+import About from "./components/Home/About.vue";
 export default {
     components: {
         TheHeader,
         TheHero,
+        About,
     },
 };
 </script>
