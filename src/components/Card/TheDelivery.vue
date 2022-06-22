@@ -4,7 +4,7 @@
             class="w-4/5 bg-whiteRHA py-10 rounded-2xl flex flex-col sm:flex-row sm:justify-around"
         >
             <div
-                class="flex flex-wrap justify-around items-center py-4 md:py-0 md:py-0"
+                class="flex flex-wrap justify-around items-center py-4 md:py-0"
             >
                 <Icons
                     class="w-11 md:w-14 md:h-11 h-8 sm:w-11 text-primaryRHA"
