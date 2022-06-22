@@ -3,7 +3,9 @@
         <the-header />
         <the-hero />
     </div>
-    <About />
+    <div id="second-background">
+        <About />
+    </div>
 </template>
 
 <script>
@@ -20,6 +22,7 @@ export default {
 </script>
 
 <style scoped>
+/* BACKGROUND CORRESPONDENT AT THE HERO */
 #background {
     background: linear-gradient(
             150.52deg,
@@ -29,6 +32,13 @@ export default {
             rgba(4, 21, 31, 0) 91.09%
         ),
         url("./assets/Images/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* BACKGROUND CORRESPONDENT FROM THE ABOUT TO THE SERVICES */
+#second-background {
+    background: url("./assets/Images/second-background.png") fixed 50% 50%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
