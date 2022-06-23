@@ -4,7 +4,7 @@
         class="mx-auto w-4/5 flex justify-center bg-blackRHA flex-col rounded-xl"
     >
         <div></div>
-        <div class="w-full sm:px-14 md:px-20 px-8">
+        <div class="w-full px-10 md:px-20 my-8">
             <div
                 class="mt-2 border-l-2 border-secondaryRHA w-4/5 flex flex-wrap"
             >
