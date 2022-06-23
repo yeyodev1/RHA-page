@@ -5,6 +5,7 @@
     </div>
     <div id="second-background">
         <About />
+        <OurServices />
     </div>
 </template>
 
@@ -12,11 +13,13 @@
 import TheHeader from "./components/Home/TheHeader.vue";
 import TheHero from "./components/Home/TheHero.vue";
 import About from "./components/Home/About.vue";
+import OurServices from "./components/Home/OurServices.vue";
 export default {
     components: {
         TheHeader,
         TheHero,
         About,
+        OurServices,
     },
 };
 </script>
