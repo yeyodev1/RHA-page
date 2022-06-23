@@ -1,7 +1,7 @@
 <template>
     <div class="pt-28 pb-28 lg:pt-48 :pb-72 flex flex-col-reverse w-full">
         <div
-            class="max-w-7xl w-full mx-auto lg:px-10 lg:py-5 flex lg:h-80 mask overflow-x-hidden"
+            class="max-w-7xl w-full mx-auto lg:px-10 lg:py-5 flex lg:h-80 mask overflow-x-hidden overflow-y-hidden"
         >
             <div
                 id="container"
