@@ -6,10 +6,7 @@
             <div
                 class="flex flex-wrap justify-around items-center py-4 md:py-0"
             >
-                <Icons
-                    class="w-12 h-12 text-primaryRHA sm:mr-2"
-                    :name="truck"
-                ></Icons>
+                <truck />
                 <p class="font-principal text-xs md:text-base">
                     Envios terrestres
                 </p>
@@ -17,19 +14,13 @@
             <div
                 class="flex flex-wrap justify-around items-center py-4 md:py-0 sm:"
             >
-                <Icons
-                    class="w-12 h-12 text-primaryRHA sm:mr-2"
-                    :name="plane"
-                ></Icons>
+                <plane />
                 <p class="font-principal text-xs md:text-base">Envios aereos</p>
             </div>
             <div
                 class="flex flex-wrap justify-around items-center py-4 md:py-0 sm:"
             >
-                <Icons
-                    class="w-12 h-12 text-primaryRHA sm:mr-2"
-                    :name="boat"
-                ></Icons>
+                <boat />
                 <p class="font-principal text-xs md:text-base">
                     Envios marítimos
                 </p>
@@ -39,13 +30,11 @@
 </template>
 
 <script>
+import truck from "../Global/Icons/Truck.vue";
+import plane from "../Global/Icons/Plane.vue";
+import boat from "../Global/Icons/Boat.vue";
 import Icons from "../Global/Icons.vue";
 export default {
-    components: { Icons },
-    data: () => ({
-        plane: "plane",
-        boat: "boat",
-        truck: "truck",
-    }),
+    components: { Icons, boat, plane, truck },
 };
 </script>
