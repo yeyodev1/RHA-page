@@ -34,16 +34,32 @@
                 />
             </div>
         </div>
+        <div
+            class="w-28 h-9 sm:w-36 sm:h-12 bg-secondaryRHA flex justify-center items-center rounded-md mt-12"
+        >
+            <a href="">
+                <button
+                    class="w-full h-9 text-whiteRHA flex justify-center items-center"
+                >
+                    Ver más
+                    <Icons class="w-4 h-4 text-whiteRHA" :name="arrowRight" />
+                </button>
+            </a>
+        </div>
     </div>
 </template>
 
 <script>
+import Icons from "../Global/Icons.vue";
 import Services from "../Card/Services.vue";
 export default {
     components: {
         Services,
+        Icons,
     },
     data: () => ({
+        // ICONS
+        arrowRight: "arrowRight",
         // SERVICES WITH THE CORRECT PROPS ESTABLISHED
         services: [
             {
