@@ -7,6 +7,7 @@
         <About />
         <OurServices />
     </div>
+    <Contact />
 </template>
 
 <script>
@@ -14,12 +15,14 @@ import TheHeader from "./components/Home/TheHeader.vue";
 import TheHero from "./components/Home/TheHero.vue";
 import About from "./components/Home/About.vue";
 import OurServices from "./components/Home/OurServices.vue";
+import Contact from "./components/Home/Contact.vue";
 export default {
     components: {
         TheHeader,
         TheHero,
         About,
         OurServices,
+        Contact,
     },
 };
 </script>
