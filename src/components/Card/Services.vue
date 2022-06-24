@@ -1,7 +1,7 @@
 <template>
     <!-- SERVICES CARD -->
     <div
-        class="w-full bg-whiteRHA flex justify-center flex-col items-center rounded-xl m-2"
+        class="w-full h-64 bg-whiteRHA flex justify-center flex-col items-center rounded-xl m-2"
     >
         <div class="w-64 h-64">
             <div class="m-4">
