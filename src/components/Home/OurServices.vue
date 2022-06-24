@@ -1,5 +1,6 @@
 <template>
-    <div class="w-full flex justify-center">
+    <div class="w-full flex justify-center flex-col items-center">
+        <!-- PLACE WITH THE TITLE -->
         <div class="w-4/5 mt-44 flex flex-col justify-center">
             <div class="flex justify-center">
                 <h2
@@ -17,9 +18,53 @@
                 </p>
             </div>
         </div>
+        <!-- CARDS WITH THE SERVICES -->
+        <div
+            class="mt-12 md:justify-center md:items-center w-full sm:flex overflow-x-scroll"
+        >
+            <div
+                class="w-auto h-auto sm:flex"
+                v-for="(service, index) in services"
+                :key="index"
+            >
+                <Services
+                    :image="service.image"
+                    :name="service.name"
+                    :description="service.description"
+                />
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
-export default {};
+import Services from "../Card/Services.vue";
+export default {
+    components: {
+        Services,
+    },
+    data: () => ({
+        // SERVICES WITH THE CORRECT PROPS ESTABLISHED
+        services: [
+            {
+                image: "../../static/image-1.png",
+                name: "Agendamiento de aduana",
+                description:
+                    "Asesoramiento en aplicación de partidas arancelarias, consultas legales y de aforo para todos nuestros clientes",
+            },
+            {
+                image: "../../static/image-2.png",
+                name: "Agendamiento de aduana",
+                description:
+                    "Asesoramiento en aplicación de partidas arancelarias, consultas legales y de aforo para todos nuestros clientes",
+            },
+            {
+                image: "../../static/image-3.png",
+                name: "Agendamiento de aduana",
+                description:
+                    "Asesoramiento en aplicación de partidas arancelarias, consultas legales y de aforo para todos nuestros clientes",
+            },
+        ],
+    }),
+};
 </script>
