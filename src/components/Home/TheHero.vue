@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import TheServices from "../The/Services.vue";
+import TheServices from "../The/ServicesOnHero.vue";
 export default {
     components: {
         TheServices,
