@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full flex justify-center flex-col items-center">
+    <div class="w-full flex justify-center flex-col items-center pb-16">
         <!-- PLACE WITH THE TITLE -->
         <div class="w-4/5 mt-44 flex flex-col justify-center">
             <div class="flex justify-center">
