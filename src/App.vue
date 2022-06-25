@@ -8,9 +8,11 @@
         <OurServices />
     </div>
     <Contact />
+    <the-footer />
 </template>
 
 <script>
+import TheFooter from "./components/Home/TheFooter.vue";
 import TheHeader from "./components/Home/TheHeader.vue";
 import TheHero from "./components/Home/TheHero.vue";
 import About from "./components/Home/About.vue";
@@ -23,6 +25,7 @@ export default {
         About,
         OurServices,
         Contact,
+        TheFooter,
     },
 };
 </script>
