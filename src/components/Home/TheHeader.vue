@@ -1,6 +1,6 @@
 <template>
     <header
-        class="w-full flex justify-between header hover:bg-backgroundRHA hover:transition-all"
+        class="w-full flex justify-between header lg:hover:bg-backgroundRHA hover:transition-all"
     >
         <!-- HEADER TO SMALL ADVICES  -->
         <div
