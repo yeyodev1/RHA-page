@@ -5,6 +5,7 @@ import {
     mdiFerry,
     mdiInstagram,
     mdiTruck,
+    mdiWindowClose,
 } from "@mdi/js";
 
 export default {
@@ -14,4 +15,5 @@ export default {
     truck: mdiTruck,
     instagram: mdiInstagram,
     facebook: mdiFacebook,
+    close: mdiWindowClose,
 };
