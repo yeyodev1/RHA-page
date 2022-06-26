@@ -1,7 +1,9 @@
 <template>
     <div class="w-full bg-blackRHA mx-auto flex flex-col">
-        <div class="max-w-7xl flex justify-center items-center flex-col pb-40">
-            <div class="w-4/5 pt-16">
+        <div
+            class="max-w-7xl flex justify-center items-center flex-col sm:justify-start sm:items-start ml-24 pb-40"
+        >
+            <div class="w-4/5 sm:w-1/3 pt-16">
                 <h6
                     class="pl-4 border-l-2 border-secondaryRHA text-whiteRHA text-3xl sm:text-4xl"
                 >
