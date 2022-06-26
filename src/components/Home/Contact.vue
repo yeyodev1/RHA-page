@@ -1,7 +1,7 @@
 <template>
     <div class="w-full bg-blackRHA mx-auto flex flex-col">
         <div
-            class="max-w-7xl flex justify-center items-center flex-col sm:justify-start sm:items-start ml-24 pb-40"
+            class="max-w-7xl flex justify-center items-center flex-col sm:justify-start sm:items-start sm:ml-24 pb-40"
         >
             <div class="w-4/5 sm:w-1/3 pt-16 lg:w-1/3">
                 <h6
