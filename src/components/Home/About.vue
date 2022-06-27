@@ -1,37 +1,62 @@
 <template>
     <the-delivery />
     <div
-        class="mx-auto w-4/5 flex justify-center bg-blackRHA flex-col rounded-xl"
+        class="flex flex-col md:flex-row-reverse md:w-4/5 md:mx-auto md:justify-start md:items-center max-w-6xl md:relative"
     >
-        <div></div>
-        <div class="w-full px-10 md:px-20 my-8">
+        <div
+            class="w-full flex justify-center md:justify-start items-center md:absolute"
+        >
             <div
-                class="mt-2 border-l-2 border-secondaryRHA w-4/5 flex flex-wrap"
+                class="w-2/3 md:w-1/2 background flex justify-center items-center flex-col rounded-md md:h-80 lg:h-64 md:ml-10"
             >
-                <p
-                    class="pl-3 text-whiteRHA uppercase text-base my-2 sm:text-2xl md:text-3xl font-principal"
-                >
-                    la experiencia, importa
-                </p>
+                <div class="pt-5">
+                    <p
+                        class="text-7xl font-semibold font-principal text-whiteRHA"
+                    >
+                        40
+                    </p>
+                </div>
+                <div class="pt-3 pb-3">
+                    <p
+                        class="text-whiteRHA font-principal text-2xl sm:text-3xl md:text-4xl"
+                    >
+                        años
+                    </p>
+                </div>
             </div>
-            <div class="w-4/5">
-                <h3
-                    class="font-semibold text-xs sm:text-lg text-whiteRHA font-principal"
+        </div>
+        <div
+            class="mx-auto md:mx-0 md: w-4/5 md:w-1/2 flex justify-end bg-blackRHA flex-col rounded-xl z-20 relative -top-2"
+        >
+            <div class="w-full px-10 md:pl-20 my-8">
+                <div
+                    class="mt-2 border-l-2 border-secondaryRHA w-4/5 flex flex-wrap"
                 >
-                    Luis Reyes Obando
-                </h3>
-                <p
-                    class="font-principal text-xs sm:text-sm md:text-base text-whiteRHA"
-                >
-                    Agente de aduana
-                </p>
-            </div>
-            <div class="w-full mt-4">
-                <p class="text-xs text-whiteRHA sm:text-base">
-                    Ser una empresa líder que brinda servicios aduaneros, de
-                    logístiva y transporte con la flexibilidad pertinente a la
-                    necesidad de cada uno de nuestros clientes
-                </p>
+                    <p
+                        class="pl-3 text-whiteRHA uppercase text-base my-2 sm:text-2xl md:text-3xl font-principal"
+                    >
+                        la experiencia, importa
+                    </p>
+                </div>
+                <div class="w-4/5">
+                    <h3
+                        class="font-semibold text-xs sm:text-lg text-whiteRHA font-principal"
+                    >
+                        Luis Reyes Obando
+                    </h3>
+                    <p
+                        class="font-principal text-xs sm:text-sm md:text-base text-whiteRHA"
+                    >
+                        Agente de aduana
+                    </p>
+                </div>
+                <div class="w-full mt-4">
+                    <p class="text-xs text-whiteRHA sm:text-base">
+                        Ser una empresa líder que brinda servicios aduaneros, de
+                        logístiva y transporte con la flexibilidad pertinente a
+                        la necesidad de cada uno de nuestros clientes
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -44,3 +69,16 @@ export default {
     data: () => ({}),
 };
 </script>
+
+<style scoped>
+.background {
+    background-repeat: no-repeat;
+    background: linear-gradient(
+            0deg,
+            rgba(4, 21, 31, 0.5),
+            rgba(4, 21, 31, 0.5)
+        ),
+        url("../../../static/containers.png");
+    background-size: cover;
+}
+</style>
