@@ -3,7 +3,7 @@
         <the-header />
         <the-hero />
     </div>
-    <Menu />
+    <!-- <Menu /> -->
     <div id="second-background">
         <About />
         <OurServices />
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Menu from "./components/Home/Menu.vue";
+// import Menu from "./components/Home/Menu.vue";
 import TheFooter from "./components/Home/TheFooter.vue";
 import TheHeader from "./components/Home/TheHeader.vue";
 import TheHero from "./components/Home/TheHero.vue";
@@ -28,7 +28,7 @@ export default {
         OurServices,
         Contact,
         TheFooter,
-        Menu,
+        // Menu,
     },
 };
 </script>
