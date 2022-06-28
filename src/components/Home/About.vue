@@ -7,11 +7,11 @@
             class="w-full flex justify-center md:justify-start items-center md:absolute"
         >
             <div
-                class="w-2/3 md:w-1/2 background flex justify-center items-center flex-col rounded-md md:h-80 lg:h-64 md:ml-10"
+                class="w-2/3 md:w-1/2 lg:w-1/4 background flex justify-center items-center flex-col rounded-md md:h-80 lg:h-72 md:ml-24"
             >
                 <div class="pt-5">
                     <p
-                        class="text-7xl font-semibold font-principal text-whiteRHA"
+                        class="text-7xl lg:text-9xl sm:text-8xl font-semibold font-principal text-whiteRHA"
                     >
                         40
                     </p>
@@ -26,7 +26,7 @@
             </div>
         </div>
         <div
-            class="mx-auto md:mx-0 md: w-4/5 md:w-1/2 flex justify-end bg-blackRHA flex-col rounded-xl z-20 relative -top-2"
+            class="mx-auto md:mx-0 w-4/5 md:w-1/2 lg:w-2/3 flex justify-end bg-blackRHA flex-col rounded-xl z-20 relative -top-2 lg:pt-16 lg:pb-16"
         >
             <div class="w-full px-10 md:pl-20 my-8">
                 <div
@@ -56,6 +56,21 @@
                         logístiva y transporte con la flexibilidad pertinente a
                         la necesidad de cada uno de nuestros clientes
                     </p>
+                </div>
+                <div
+                    class="w-28 h-9 sm:w-36 sm:h-12 bg-secondaryRHA flex justify-center items-center rounded-md mt-12"
+                >
+                    <a href="">
+                        <button
+                            class="w-full h-9 text-whiteRHA flex justify-center items-center"
+                        >
+                            Ver más
+                            <Icons
+                                class="w-4 h-4 text-whiteRHA"
+                                :name="arrowRight"
+                            />
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
