@@ -66,12 +66,18 @@ export default {
     }),
 
     computed: {
-        ...mapGetters("menu", [showMenu]),
+        ...mapGetters("menu", ["showMenu"]),
         isShown() {
-            return this.showMenu === false ? "left-full" : "left-0";
+            return !this.showMenu ? "left-full" : "left-0";
         },
-        isClosed() {
-            return this.showMenu === true;
+    },
+
+    methods: {
+        ...mapActions("menu", ["activeMenu"]),
+        closeMenu() {
+            if (this.showMenu) {
+                this.activeMenu(false);
+            }
         },
     },
 };
