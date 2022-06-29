@@ -78,10 +78,13 @@
 </template>
 
 <script>
+import Icons from "../Global/Icons.vue";
 import TheDelivery from "../Card/TheDelivery.vue";
 export default {
-    components: { TheDelivery },
-    data: () => ({}),
+    components: { TheDelivery, Icons },
+    data: () => ({
+        arrowRight: "arrowRight",
+    }),
 };
 </script>
 
