@@ -4,17 +4,13 @@
     >
         <!-- HEADER TO SMALL ADVICES  -->
         <div
-            class="w-full h-8 flex lg:hidden justify-between items-center mx-5 sm:hidden"
+            class="w-full flex lg:hidden justify-between items-center mx-5 sm:hidden pt-2"
         >
             <!-- SPACE WHERE IS THE LOGO -->
-            <div class="w-6 h-4 flex justify-center small-logo"></div>
+            <div class="w-10 h-10 flex justify-center small-logo"></div>
             <!-- SPACE WHERES THE BUTTON -->
-            <button class="">
-                <div class="flex w-5 h-5 flex-col">
-                    <div class="w-full h-5 border-b border-whiteRHA"></div>
-                    <div class="w-full h-5 border-b border-whiteRHA"></div>
-                    <div class="w-full h-5 border-b border-whiteRHA"></div>
-                </div>
+            <button class="w-9 h-7" @click="getMenu">
+                <Icons class="w-full h-7 text-whiteRHA" :name="menu" />
             </button>
         </div>
         <!-- HEADER IS SM ADVICES -->
@@ -75,16 +71,25 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
 import Icons from "../Global/Icons.vue";
 export default {
     components: { Icons },
     data: () => ({
+        menu: "menu",
         icons: [
             {
                 name: "arrowRight",
             },
         ],
     }),
+
+    methods: {
+        ...mapActions("menu", ["activeMenu"]),
+        getMenu() {
+            this.activeMenu(true);
+        },
+    },
 };
 </script>
 
