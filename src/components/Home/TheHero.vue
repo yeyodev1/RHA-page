@@ -17,29 +17,6 @@
                 </the-services>
             </div>
         </div>
-        <!-- POINTS CONNECTED TO THE SLIDS -->
-        <div class="max-w-7xl w-14 h-3 mx-auto flex justify-between ml-14 mb-9">
-            <a href="item#1">
-                <button
-                    class="list-none w-2 h-2 bg-grayRHA rounded-full active:bg-tertiaryRHA"
-                />
-            </a>
-            <a href="item#2">
-                <button
-                    class="list-none w-2 h-2 bg-grayRHA rounded-full active:bg-tertiaryRHA"
-                />
-            </a>
-            <a href="item#3">
-                <button
-                    class="list-none w-2 h-2 bg-grayRHA rounded-full active:bg-tertiaryRHA"
-                />
-            </a>
-            <a href="item#4">
-                <button
-                    class="list-none w-2 h-2 bg-grayRHA rounded-full active:bg-tertiaryRHA"
-                />
-            </a>
-        </div>
     </div>
 </template>
 
