@@ -96,7 +96,7 @@ export default {
             rgba(4, 21, 31, 0.5),
             rgba(4, 21, 31, 0.5)
         ),
-        url("../../../static/containers.png");
+        url("../../static/containers.png");
     background-size: cover;
 }
 </style>
