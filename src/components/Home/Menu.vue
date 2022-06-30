@@ -28,13 +28,13 @@
                 </a>
             </div>
             <div class="w-full pt-12 flex justify-center items-center">
-                <a href="">
+                <router-link to="/servicios">
                     <button
                         class="w-20 h-6 sm:w-40 sm:h-14 bg-secondaryRHA text-whiteRHA font-principal text-xs sm:text-2xl rounded-md"
                     >
                         Cotizar
                     </button>
-                </a>
+                </router-link>
             </div>
         </div>
     </div>
