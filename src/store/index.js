@@ -1,5 +1,5 @@
 import { createStore } from "vuex";
-import menu from "./Modules/menu";
+import menu from "./modules/menu";
 
 const store = createStore({ modules: { menu } });
 
