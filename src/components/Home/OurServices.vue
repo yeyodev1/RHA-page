@@ -37,14 +37,14 @@
         <div
             class="w-28 h-9 sm:w-36 sm:h-12 bg-secondaryRHA flex justify-center items-center rounded-md mt-12"
         >
-            <a href="">
+            <router-link to="/servicios">
                 <button
                     class="w-full h-9 text-whiteRHA flex justify-center items-center"
                 >
                     Ver más
                     <Icons class="w-4 h-4 text-whiteRHA" :name="arrowRight" />
                 </button>
-            </a>
+            </router-link>
         </div>
     </div>
 </template>
