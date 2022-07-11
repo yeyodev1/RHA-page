@@ -42,19 +42,19 @@
             </div>
             <!-- BUTTON TO CONSULT THE COSTS -->
             <div class="bg-secondaryRHA hover:bg-tertiaryRHA w-36 rounded-xl">
-                <router-link to="/servicios">
-                    <button
-                        class="w-full h-11 flex justify-center items-center text-whiteRHA"
-                        v-for="(icon, index) in icons"
-                        :key="index"
-                    >
-                        Cotizar
-                        <Icons
-                            :name="icon.name"
-                            class="w-4 h-4 hover:w-7 hover:h-7 transition-all text-whiteRHA"
-                        />
-                    </button>
-                </router-link>
+                <!-- <router-link to="/servicios"> -->
+                <button
+                    class="w-full h-11 flex justify-center items-center text-whiteRHA"
+                    v-for="(icon, index) in icons"
+                    :key="index"
+                >
+                    Cotizar
+                    <Icons
+                        :name="icon.name"
+                        class="w-4 h-4 hover:w-7 hover:h-7 transition-all text-whiteRHA"
+                    />
+                </button>
+                <!-- </router-link> -->
             </div>
         </div>
     </header>
