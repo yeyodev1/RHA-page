@@ -1,15 +1,18 @@
 <template>
     <main id="app" class="w-screen h-screen">
         <router-view></router-view>
+        <TheFooter></TheFooter>
     </main>
 </template>
 
 <script>
-import home from "./views/Home.vue";
+import TheHeader from "./components/Home/TheHeader.vue";
+import TheFooter from "./components/Home/TheFooter.vue";
 
 export default {
     components: {
-        home,
+        TheHeader,
+        TheFooter,
     },
 };
 </script>
