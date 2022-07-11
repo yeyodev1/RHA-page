@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 
+console.log("router");
 // COMPONENTS
 import Home from "../views/Home.vue";
 import services from "../views/Services.vue";
