@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full flex flex-col justify-center items-center">
+    <div class="w-full flex flex-col justify-center items-center flex-wrap">
         <div class="w-3/4 mt-44 mb-4">
             <h4 class="text-3xl font-principal sm:text-5xl text-whiteRHA">
                 Nuestros servicios
