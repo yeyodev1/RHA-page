@@ -1,7 +1,7 @@
 <template>
     <div id="background" class="w-full mx-auto bg-no-repeat bg-center bg-cover">
-        <the-header />
-        <the-hero />
+        <TheHeader />
+        <TheHero />
     </div>
     <Menu />
     <div id="second-background">
@@ -9,26 +9,23 @@
         <OurServices />
     </div>
     <Contact />
-    <the-footer />
 </template>
 
 <script>
 import Menu from "../components/Home/Menu.vue";
-import TheFooter from "../components/Home/TheFooter.vue";
-import TheHeader from "../components/Home/TheHeader.vue";
 import TheHero from "../components/Home/TheHero.vue";
 import About from "../components/Home/About.vue";
 import OurServices from "../components/Home/OurServices.vue";
 import Contact from "../components/Home/Contact.vue";
+import TheHeader from "../components/Home/TheHeader.vue";
 export default {
     components: {
-        TheHeader,
         TheHero,
         About,
         OurServices,
         Contact,
-        TheFooter,
         Menu,
+        TheHeader,
     },
 };
 </script>
