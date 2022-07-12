@@ -1,43 +1,91 @@
 <template>
     <div class="w-full">
-        <div v-for="(work, index) in works" :key="index">
-            <works
-                :image="work.image"
-                :name="work.name"
-                :description="work.description"
-            />
+        <div class="w-full pb-10 flex flex-col sm:flex-row sm:px-8">
+            <div class="w-4/5 mx-auto pt-8 sm:pl-9">
+                <div class="pt-5">
+                    <h4
+                        class="text-blackRHA font-principal font-semibold text-base sm:text-3xl lg:"
+                    >
+                        lorem ipsum
+                    </h4>
+                </div>
+                <div class="pb-3">
+                    <p class="font-principal text-blackRHA text-base">
+                        "Asesoramiento en aplicación de partidas arancelarias,
+                        consultas legales y de aforo para todos nuestros
+                        clientes. Asesoramiento en aplicación de partidas
+                        arancelarias, consultas legales y de aforo para todos
+                        nuestros clientes."
+                    </p>
+                </div>
+            </div>
+            <div class="h-36 w-full flex justify-end">
+                <img
+                    class="image-width w-full h-36 object-cover"
+                    src="../../../images/image-1.png "
+                    alt=""
+                />
+            </div>
+        </div>
+        <div class="w-full pb-10 flex flex-col sm:flex-row sm:px-8">
+            <div class="w-4/5 mx-auto pt-8 sm:pl-9">
+                <div class="pt-5">
+                    <h4
+                        class="text-blackRHA font-principal font-semibold text-base sm:text-3xl lg:"
+                    >
+                        lorem ipsum
+                    </h4>
+                </div>
+                <div class="pb-3">
+                    <p class="font-principal text-blackRHA text-base">
+                        "Asesoramiento en aplicación de partidas arancelarias,
+                        consultas legales y de aforo para todos nuestros
+                        clientes. Asesoramiento en aplicación de partidas
+                        arancelarias, consultas legales y de aforo para todos
+                        nuestros clientes."
+                    </p>
+                </div>
+            </div>
+            <div class="h-36 w-full flex justify-start">
+                <img
+                    class="image-width w-full h-36 object-cover"
+                    src="../../../images/image-2.png "
+                    alt=""
+                />
+            </div>
+        </div>
+        <div class="w-4/5 mx-auto pt-8 sm:pl-9">
+            <div class="pt-5">
+                <div class="pt-5">
+                    <h4
+                        class="text-blackRHA font-principal font-semibold text-base sm:text-3xl"
+                    >
+                        lorem ipsum
+                    </h4>
+                </div>
+                <div class="pb-3">
+                    <p class="font-principal text-blackRHA text-base">
+                        Asesoramiento en aplicación de partidas arancelarias,
+                        consultas legales y de aforo para todos nuestros
+                        clientes. Asesoramiento en aplicación de partidas
+                        arancelarias, consultas legales y de aforo para todos
+                        nuestros clientes.
+                    </p>
+                </div>
+            </div>
+            <div class="h-36 w-full flex justify-end">
+                <img
+                    class="image-width w-full h-36 object-cover"
+                    src="../../../images/image-3.png "
+                    alt=""
+                />
+            </div>
         </div>
     </div>
 </template>
 
-<script>
-import works from "./Works/works.vue";
-
-export default {
-    components: {
-        works,
-    },
-    data: () => ({
-        works: [
-            {
-                image: "../../../images/image-1.png",
-                name: "lorem ipsum ",
-                description:
-                    "lorem ipsum lorem ipsummmajs faster herbsum ahdb ridsji sdfaisrohfk ribeye",
-            },
-            {
-                image: "../../../images/image-2.png",
-                name: "lorem ipsum ",
-                description:
-                    "lorem ipsum lorem ipsummmajs faster herbsum ahdb ridsji sdfaisrohfk ribeye",
-            },
-            {
-                image: "../../../images/image-3.png",
-                name: "lorem ipsum ",
-                description:
-                    "lorem ipsum lorem ipsummmajs faster herbsum ahdb ridsji sdfaisrohfk ribeye",
-            },
-        ],
-    }),
-};
-</script>
+<style scoped>
+.image-width {
+    width: 300px;
+}
+</style>
