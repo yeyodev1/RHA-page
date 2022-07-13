@@ -3,7 +3,7 @@
         <div
             class="max-w-7xl flex justify-center items-center flex-col sm:justify-start sm:items-start sm:ml-24 pb-40"
         >
-            <div class="mx-auto w-4/5 sm:w-1/3 pt-16 lg:w-1/3">
+            <div class="w-4/5 sm:w-1/3 pt-16 lg:w-1/3">
                 <h6
                     class="pl-4 border-l-2 border-secondaryRHA text-whiteRHA text-3xl sm:text-4xl"
                 >
