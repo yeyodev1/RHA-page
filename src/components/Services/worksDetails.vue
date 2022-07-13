@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full max-w-6xl">
+    <div class="w-full max-w-6xl mx-auto">
         <div class="w-full pb-10 flex flex-col sm:flex-row sm:px-11">
             <div
                 class="w-4/5 mx-auto pt-8 sm:pl-9 flex flex-col justify-center"
@@ -100,6 +100,12 @@
     .image-width {
         width: 14.5rem;
         height: 26.563rem;
+    }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) {
+    .image-width {
+        width: 25.75rem;
+        height: 25.938rem;
     }
 }
 </style>
