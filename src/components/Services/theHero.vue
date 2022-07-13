@@ -5,7 +5,7 @@
                 Nuestros servicios
             </h4>
         </div>
-        <div class="w-3/4 mb-20">
+        <div class="w-3/4 pb-40">
             <p class="font-principal text-base sm:text-3xl text-whiteRHA">
                 Asesoramiento en aplicación de partidas arancelarias, consultas
                 legales y de aforo para todos nuestros clientes
