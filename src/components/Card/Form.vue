@@ -4,7 +4,7 @@
         class="w-full bg-grayRHA bg-bottom flex justify-center items-center"
     >
         <div
-            class="w-4/5 bg-whiteRHA rounded-xl pt-5 relative -top-16 sm:ml-36 lg:w-2/3 lg:-top-24 lg:left-12"
+            class="max-w-7xl w-4/5 bg-whiteRHA rounded-xl pt-5 relative -top-16 sm:ml-36 lg:w-2/3 lg:-top-24 lg:left-12"
         >
             <h2 class="text-xs sm:text-2xl ml-6 sm:ml-12 sm:mb-8 mb-4 lg:mb-8">
                 Empecemos a charlar
