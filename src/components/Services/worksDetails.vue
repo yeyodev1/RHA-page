@@ -1,8 +1,10 @@
 <template>
-    <div class="w-full max-w-6xl mx-auto">
-        <div class="w-full pb-10 flex flex-col sm:flex-row sm:px-11">
+    <div class="w-full mx-auto">
+        <div
+            class="w-full pb-10 flex flex-col sm:flex-row sm:px-11 max-w-6xl mx-auto"
+        >
             <div
-                class="w-4/5 mx-auto pt-8 sm:pl-9 flex flex-col justify-center"
+                class="w-4/5 mx-auto pt-8 sm:pl-9 flex flex-col justify-center max-w-6xl"
             >
                 <div class="pt-5">
                     <h4
@@ -21,7 +23,7 @@
                     </p>
                 </div>
             </div>
-            <div class="w-full flex justify-end">
+            <div class="w-full flex justify-end max-w-6xl mx-auto">
                 <img
                     class="image-width w-full h-36 object-cover no-reped"
                     src="../../../images/image-1.png "
@@ -30,7 +32,7 @@
             </div>
         </div>
         <div
-            class="w-full sm:pt-2 pb-10 flex flex-col sm:flex-row-reverse sm:pr-8 sm:pl-24"
+            class="w-full sm:pt-2 pb-10 flex flex-col sm:flex-row-reverse sm:pr-8 sm:pl-24 max-w-6xl mx-auto"
         >
             <div
                 class="w-4/5 mx-auto pt-8 sm:pl-9 flex flex-col justify-center"
@@ -60,7 +62,9 @@
                 />
             </div>
         </div>
-        <div class="w-full pb-10 flex flex-col sm:flex-row sm:px-11">
+        <div
+            class="w-full pb-10 flex flex-col sm:flex-row sm:px-11 max-w-6xl mx-auto"
+        >
             <div
                 class="w-4/5 mx-auto pt-8 sm:pl-9 flex flex-col justify-center"
             >

@@ -1,6 +1,6 @@
 <template>
     <div class="bg-grayRHA">
-        <div class="max-w-7xl">
+        <div class="max-w-7xl mx-auto">
             <div class="w-full bg-grayRHA flex-col px-8">
                 <div class="w-4/5 border-l border-secondaryRHA">
                     <div class="w-full pl-3 sm:pl-4 pb-5 sm:pb-7">

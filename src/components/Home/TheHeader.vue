@@ -4,7 +4,7 @@
     >
         <!-- HEADER TO SMALL ADVICES  -->
         <div
-            class="w-full flex lg:hidden justify-between items-center mx-5 sm:px-10 pt-2"
+            class="w-full flex lg:hidden justify-between items-center px-5 sm:px-10 pt-2"
         >
             <!-- SPACE WHERE IS THE LOGO -->
             <div

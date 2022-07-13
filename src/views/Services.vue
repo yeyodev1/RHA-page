@@ -3,6 +3,7 @@
         <the-header />
         <the-hero />
     </div>
+    <Menu />
     <div id="background-2">
         <works-details />
     </div>
@@ -14,12 +15,14 @@ import contact from "../components/Home/Contact.vue";
 import worksDetails from "../components/Services/worksDetails.vue";
 import TheHeader from "../components/Home/TheHeader.vue";
 import TheHero from "../components/Services/theHero.vue";
+import Menu from "../components/Home/Menu.vue";
 export default {
     components: {
         contact,
         TheHeader,
         TheHero,
         worksDetails,
+        Menu,
     },
 };
 </script>
