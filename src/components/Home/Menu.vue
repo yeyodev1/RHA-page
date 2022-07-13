@@ -31,6 +31,7 @@
                 <router-link to="/servicios">
                     <button
                         class="w-20 h-6 sm:w-40 sm:h-14 bg-secondaryRHA text-whiteRHA font-principal text-xs sm:text-2xl rounded-md"
+                        @click="closeMenu"
                     >
                         Cotizar
                     </button>
