@@ -1,7 +1,7 @@
 <template>
-    <div class="pt-28 pb-28 lg:pt-48 :pb-72 flex flex-col-reverse w-full">
+    <div class="pt-28 pb-28 lg:pt-48 flex flex-col-reverse w-full max-w-3xl">
         <div
-            class="max-w-7xl w-full mx-auto lg:px-10 lg:py-5 flex lg:h-80 mask overflow-x-hidden overflow-y-hidden"
+            class="w-full mx-auto lg:px-10 lg:py-5 flex mask overflow-x-hidden overflow-y-hidden lg:pb-40 lg:pl-24 max-w-4xl"
         >
             <div
                 id="container"
@@ -12,7 +12,7 @@
                 <the-services
                     :service="service.service"
                     :id="service.id"
-                    class="mx-11"
+                    class="mx-11 md:mx-12 lg:mx-11"
                 >
                 </the-services>
             </div>
@@ -82,5 +82,44 @@ export default {
 }
 .mask {
     clip-path: inset(0 29% 0 0);
+}
+@media only screen and (min-device-width: 1024px) {
+    .mask {
+        clip-path: inset(0 42% 0 11%);
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .mask {
+        clip-path: inset(0 56% 0 6%);
+    }
+}
+
+@media only screen and (min-device-width: 1024px) {
+    @keyframes slide {
+        0% {
+            padding-right: 0%;
+        }
+        20% {
+            padding-right: 0%;
+        }
+        25% {
+            padding-right: 300%;
+        }
+        45% {
+            padding-right: 300%;
+        }
+        50% {
+            padding-right: 445%;
+        }
+        70% {
+            padding-right: 445%;
+        }
+        75% {
+            padding-right: 700%;
+        }
+        95% {
+            padding-right: 700%;
+        }
+    }
 }
 </style>
