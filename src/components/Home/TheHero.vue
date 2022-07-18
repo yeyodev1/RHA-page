@@ -12,7 +12,7 @@
                 <the-services
                     :service="service.service"
                     :id="service.id"
-                    class="mx-11 md:mx-12 lg:mx-11"
+                    class="mx-11 sm:mx-0 md:mx-12 lg:mx-11"
                 >
                 </the-services>
             </div>
@@ -50,9 +50,12 @@ export default {
 </script>
 
 <style scoped>
+/* DEFINING THE ANIMATION */
 #container div {
     animation: slide 15s infinite;
 }
+
+/* SLIDEEEEEEE */
 
 @keyframes slide {
     0% {
@@ -80,20 +83,6 @@ export default {
         padding-right: 650%;
     }
 }
-.mask {
-    clip-path: inset(0 29% 0 0);
-}
-@media only screen and (min-device-width: 1024px) {
-    .mask {
-        clip-path: inset(0 42% 0 11%);
-    }
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .mask {
-        clip-path: inset(0 56% 0 6%);
-    }
-}
-
 @media only screen and (min-device-width: 1024px) {
     @keyframes slide {
         0% {
@@ -120,6 +109,71 @@ export default {
         95% {
             padding-right: 700%;
         }
+    }
+}
+@media only screen and (min-device-width: 354px) and (max-device-width: 768px) {
+    @keyframes slide {
+        0% {
+            padding-right: 0%;
+        }
+        20% {
+            padding-right: 0%;
+        }
+        25% {
+            padding-right: 220%;
+        }
+        45% {
+            padding-right: 220%;
+        }
+        50% {
+            padding-right: 400%;
+        }
+        70% {
+            padding-right: 400%;
+        }
+        75% {
+            padding-right: 650%;
+        }
+        95% {
+            padding-right: 650%;
+        }
+    }
+}
+
+/* MASK TO SHOW ONLY THE SERVICES  */
+.mask {
+    clip-path: inset(0 29% 0 0);
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .mask {
+        clip-path: inset(0 56% 0 6%);
+    }
+}
+
+@media only screen and (min-device-width: 354px) and (max-device-width: 398px) {
+    .mask {
+        clip-path: inset(0 36% 0 12%);
+    }
+}
+@media only screen and (min-device-width: 399px) and (max-device-width: 425px) {
+    .mask {
+        clip-path: inset(0 41% 0 8%);
+    }
+}
+@media only screen and (min-device-width: 425px) and (max-device-width: 489px) {
+    .mask {
+        clip-path: inset(0 48% 0 8%);
+    }
+}
+@media only screen and (min-device-width: 490px) and (max-device-width: 550px) {
+    .mask {
+        clip-path: inset(0 54% 0 4%);
+    }
+}
+@media only screen and (min-device-width: 550px) and (max-device-width: 650px) {
+    .mask {
+        clip-path: inset(0 61% 0 3%);
     }
 }
 </style>
