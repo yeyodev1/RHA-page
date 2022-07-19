@@ -12,6 +12,4 @@ app.use(router);
 // STORE
 app.use(store);
 
-console.log(router, store);
-
 app.mount("#app");
