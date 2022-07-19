@@ -57,6 +57,7 @@
                 <a href="">
                     <button
                         class="w-full h-9 text-whiteRHA flex justify-center items-center"
+                        @click.prevent="sendEmail"
                     >
                         Ver más
                         <Icons
@@ -71,6 +72,7 @@
 </template>
 
 <script>
+// import emailjs from "emailjs-com";
 import Icons from "../Global/Icons.vue";
 export default {
     components: { Icons },
@@ -80,5 +82,27 @@ export default {
         userEmail: "",
         userMessage: "",
     }),
+    // GETTING NAME VALID
+    methods: {
+        //FUNCTION TO GET THE MAIL
+        async sendEmail() {
+            const mail = {
+                from_name: this.userName,
+                from_email: this.userEmail,
+                message: this.userMessage,
+            };
+            try {
+                await emailjs.send(
+                    process.env.VUE_APP_SERVICE,
+                    process.env.VUE_APP_TEMPLATE,
+                    mail,
+                    process.env.VUE_APP_ID
+                );
+                alert("Correo enviado");
+            } catch (error) {
+                console.error("CANNOT_SEND_EMAIL", error);
+            }
+        },
+    },
 };
 </script>
