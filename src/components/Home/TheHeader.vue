@@ -7,9 +7,11 @@
             class="w-full flex lg:hidden justify-between items-center px-5 sm:px-10 pt-2"
         >
             <!-- SPACE WHERE IS THE LOGO -->
-            <div
-                class="w-10 h-10 sm:w-14 sm:h-14 flex justify-center small-logo"
-            ></div>
+            <router-link to="/">
+                <button
+                    class="w-10 h-10 sm:w-14 sm:h-14 flex justify-center small-logo"
+                ></button>
+            </router-link>
             <!-- SPACE WHERES THE BUTTON -->
             <button class="w-9 h-7 sm:w-14 sm:h-14" @click="getMenu">
                 <Icons class="w-full h-7 text-whiteRHA" :name="menu" />
