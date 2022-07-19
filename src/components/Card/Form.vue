@@ -47,8 +47,8 @@
                     type=""
                     id="email"
                     v-model="userMessage"
-                    placeholder="nadie@nada.com"
-                    class="w-4/5 border-b border-secondaryRHA bg-whiteRHA placeholder:text-xs placeholder:text-grayRHA p-3"
+                    placeholder="Hola, necesito información acerca de..."
+                    class="w-4/5 border-b border-secondaryRHA bg-whiteRHA placeholder:text-xs placeholder:text-grayRHA p-3 placeholder:pt-6"
                 />
             </div>
             <div
