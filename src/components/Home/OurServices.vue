@@ -20,10 +20,10 @@
         </div>
         <!-- CARDS WITH THE SERVICES -->
         <div
-            class="mt-12 flex flex-col sm:flex-row sm:w-full overflow-scroll lg:overflow-hidden justify-center sm:items-start sm:justify-start md:justify-center"
+            class="mt-12 flex flex-col sm:flex-row sm:w-full overflow-scroll lg:overflow-hidden justify-center sm:items-start sm:justify-start"
         >
             <div
-                class="sm:flex"
+                class="sm:flex sm:px-8 lg:mx-auto"
                 v-for="(service, index) in services"
                 :key="index"
             >
