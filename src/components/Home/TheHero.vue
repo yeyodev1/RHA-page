@@ -12,7 +12,7 @@
                 <the-services
                     :service="service.service"
                     :id="service.id"
-                    class="mx-11 sm:mx-0 md:mx-12 lg:mx-11"
+                    class="mx-11 sm:mx-14 md:mx-12 lg:mx-11"
                 >
                 </the-services>
             </div>
@@ -171,9 +171,34 @@ export default {
         clip-path: inset(0 54% 0 4%);
     }
 }
-@media only screen and (min-device-width: 550px) and (max-device-width: 650px) {
+@media only screen and (min-device-width: 550px) and (max-device-width: 639px) {
     .mask {
         clip-path: inset(0 61% 0 3%);
+    }
+}
+@media only screen and (min-device-width: 640px) and (max-device-width: 658px) {
+    .mask {
+        clip-path: inset(0 45% 0 6%);
+    }
+}
+@media only screen and (min-device-width: 659px) and (max-device-width: 696px) {
+    .mask {
+        clip-path: inset(0 48% 0 7%);
+    }
+}
+@media only screen and (min-device-width: 696px) and (max-device-width: 710px) {
+    .mask {
+        clip-path: inset(0 49% 0 6%);
+    }
+}
+@media only screen and (min-device-width: 711px) and (max-device-width: 767px) {
+    .mask {
+        clip-path: inset(0 53% 0 6%);
+    }
+}
+@media only screen and (min-device-width: 1024px) {
+    .mask {
+        clip-path: inset(0 38% 0 6%);
     }
 }
 </style>
