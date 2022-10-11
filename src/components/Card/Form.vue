@@ -21,7 +21,7 @@
                         id="name"
                         v-model="userName"
                         placeholder="Diego Reyes"
-                        class="w-4/5 border-b border-secondaryRHA bg-whiteRHA placeholder:text-xs placeholder:text-grayRHA p-3"
+                        class="outline-none w-4/5 border-b border-secondaryRHA bg-whiteRHA placeholder:text-xs placeholder:text-grayRHA p-3"
                     />
                 </div>
                 <div class="flex flex-col ml-6 sm:ml-12 mb-3">
@@ -35,7 +35,7 @@
                         id="email"
                         v-model="userEmail"
                         placeholder="nadie@nada.com"
-                        class="w-4/5 border-b border-secondaryRHA bg-whiteRHA placeholder:text-xs placeholder:text-grayRHA p-3"
+                        class="outline-none w-4/5 border-b border-secondaryRHA bg-whiteRHA placeholder:text-xs placeholder:text-grayRHA p-3"
                     />
                 </div>
             </div>
@@ -48,7 +48,7 @@
                     id="email"
                     v-model="userMessage"
                     placeholder="Hola, necesito información acerca de..."
-                    class="w-4/5 border-b border-secondaryRHA bg-whiteRHA placeholder:text-xs placeholder:text-grayRHA p-3 placeholder:pt-6"
+                    class="px-4 outline-none w-4/5 border-b border-secondaryRHA bg-whiteRHA placeholder:text-xs placeholder:text-grayRHA p-3"
                 />
             </div>
             <div
@@ -72,7 +72,7 @@
 </template>
 
 <script>
-// import emailjs from "emailjs-com";
+import emailjs from "emailjs-com";
 import Icons from "../Global/Icons.vue";
 export default {
     components: { Icons },
@@ -84,7 +84,7 @@ export default {
     }),
     // GETTING NAME VALID
     methods: {
-        //FUNCTION TO GET THE MAIL
+        // FUNCTION TO GET THE MAIL
         async sendEmail() {
             const mail = {
                 from_name: this.userName,
@@ -93,10 +93,10 @@ export default {
             };
             try {
                 await emailjs.send(
-                    process.env.VUE_APP_SERVICE,
-                    process.env.VUE_APP_TEMPLATE,
+                    process.meta.env.VITE_APP_SERVICE,
+                    process.meta.env.VITE_APP_TEMPLATE,
                     mail,
-                    process.env.VUE_APP_ID
+                    process.meta.env.VITE_APP_ID
                 );
                 alert("Correo enviado");
             } catch (error) {
