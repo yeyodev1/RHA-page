@@ -91,12 +91,16 @@ export default {
                 from_email: this.userEmail,
                 message: this.userMessage,
             };
+            console.log("service id:", import.meta.env.VITE_SERVICE_ID);
+            console.log("template id:", import.meta.env.VITE_TEMPLATE_ID);
+            console.log("mail:", mail);
+            console.log("public key:", import.meta.env.VITE_PUBLIC_KEY);
             try {
                 await emailjs.send(
-                    process.meta.env.VITE_APP_SERVICE,
-                    process.meta.env.VITE_APP_TEMPLATE,
+                    import.meta.env.VITE_SERVICE_ID,
+                    import.meta.env.VITE_TEMPLATE_ID,
                     mail,
-                    process.meta.env.VITE_APP_ID
+                    import.meta.env.VITE_PUBLIC_KEY
                 );
                 alert("Correo enviado");
             } catch (error) {
