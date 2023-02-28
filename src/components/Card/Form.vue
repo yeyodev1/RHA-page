@@ -103,9 +103,16 @@ export default {
                     import.meta.env.VITE_PUBLIC_KEY
                 );
                 alert("Correo enviado");
+                this.resetinputs();
             } catch (error) {
                 console.error("CANNOT_SEND_EMAIL", error);
             }
+        },
+        // FUNCTION TO RESET INPTS
+        resetinputs() {
+            this.userName = "";
+            this.userEmail = "";
+            this.userMessage = "";
         },
     },
 };
