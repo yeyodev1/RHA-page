@@ -56,8 +56,9 @@
             >
                 <a href="">
                     <button
-                        class="w-full h-9 text-whiteRHA flex justify-center items-center"
+                        class="w-full p-2 text-whiteRHA flex justify-center items-center"
                         @click.prevent="sendEmail"
+                        :disabled="!formIsValid"
                     >
                         Ver más
                         <Icons
@@ -82,8 +83,24 @@ export default {
         userEmail: "",
         userMessage: "",
     }),
-    // GETTING NAME VALID
+    computed: {
+        // GETTING VALID FORM
+        formIsValid() {
+            return (
+                this.userName != "" &&
+                this.userEmail != "" &&
+                this.userMessage != ""
+            );
+        },
+    },
+
     methods: {
+        // FUNCTION TO VALIDATE TE MAIL
+        validMail(mail) {
+            const regex =
+                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return regex.test(mail);
+        },
         // FUNCTION TO GET THE MAIL
         async sendEmail() {
             const mail = {
