@@ -9,6 +9,7 @@
     },
     "dependencies": {
         "@mdi/js": "^6.7.96",
+        "caniuse-lite": "^1.0.30001458",
         "emailjs-com": "^3.2.0",
         "vue": "^3.2.25",
         "vue-router": "^4.0.13",
