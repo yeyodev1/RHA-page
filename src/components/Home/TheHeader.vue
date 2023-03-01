@@ -9,7 +9,7 @@
             <!-- SPACE WHERE IS THE LOGO -->
             <router-link to="/">
                 <button
-                    class="w-10 h-10 sm:w-14 sm:h-14 flex justify-center small-logo"
+                    class="w-10 h-10 sm:w-14 sm:py-14 flex justify-center small-logo"
                 ></button>
             </router-link>
             <!-- SPACE WHERES THE BUTTON -->
