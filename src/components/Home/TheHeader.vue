@@ -26,21 +26,27 @@
             <div class="w-16 h-9 flex justify-center logo" />
             <!-- BUTTONS LINKED TO REST TO THE PAGE -->
             <div class="flex w-1/4 justify-between color-font">
-                <button
-                    class="border-b-0 hover:border-b hover:border-secondaryRHA hover:transition-all"
-                >
-                    <p class="color-font font-principal">Nosotros</p>
-                </button>
-                <button
-                    class="border-b-0 hover:border-b hover:border-secondaryRHA hover:transition-all"
-                >
-                    <p class="color-font font-principal">Servicios</p>
-                </button>
-                <button
-                    class="border-b-0 hover:border-b hover:border-secondaryRHA hover:transition-all"
-                >
-                    <p class="color-font font-principal">Contacto</p>
-                </button>
+                <router-link to="/">
+                    <button
+                        class="border-b-0 hover:border-b hover:border-secondaryRHA hover:transition-all"
+                    >
+                        <p class="color-font font-principal">Nosotros</p>
+                    </button>
+                </router-link>
+                <router-link to="/">
+                    <button
+                        class="border-b-0 hover:border-b hover:border-secondaryRHA hover:transition-all"
+                    >
+                        <p class="color-font font-principal">Servicios</p>
+                    </button>
+                </router-link>
+                <router-link to="/">
+                    <button
+                        class="border-b-0 hover:border-b hover:border-secondaryRHA hover:transition-all"
+                    >
+                        <p class="color-font font-principal">Contacto</p>
+                    </button>
+                </router-link>
             </div>
             <!-- BUTTON TO CONSULT THE COSTS -->
             <div class="bg-secondaryRHA hover:bg-tertiaryRHA w-36 rounded-xl">
