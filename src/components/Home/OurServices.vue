@@ -63,19 +63,19 @@ export default {
         // SERVICES WITH THE CORRECT PROPS ESTABLISHED
         services: [
             {
-                image: "../../../images/image-1.png",
+                image: "../../../images/image-1.jpg",
                 name: "Agendamiento de aduana",
                 description:
                     "Asesoramiento en aplicación de partidas arancelarias, consultas legales y de aforo para todos nuestros clientes",
             },
             {
-                image: "../../../images/image-2.png",
+                image: "../../../images/image-2.jpg",
                 name: "Agendamiento de aduana",
                 description:
                     "Asesoramiento en aplicación de partidas arancelarias, consultas legales y de aforo para todos nuestros clientes",
             },
             {
-                image: "../../../images/image-3.png",
+                image: "../../../images/image-3.jpg",
                 name: "Agendamiento de aduana",
                 description:
                     "Asesoramiento en aplicación de partidas arancelarias, consultas legales y de aforo para todos nuestros clientes",
