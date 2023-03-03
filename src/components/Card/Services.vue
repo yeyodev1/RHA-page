@@ -1,9 +1,9 @@
 <template>
     <!-- SERVICES CARD -->
     <div
-        class="w-full h-64 bg-whiteRHA flex justify-center flex-col items-center rounded-xl mb-8"
+        class="w-full bg-whiteRHA flex justify-center flex-col items-center rounded-xl mb-8"
     >
-        <div class="w-64 h-64">
+        <div class="w-64">
             <div class="m-4">
                 <img :src="image" alt="" class="object-cover" />
             </div>
