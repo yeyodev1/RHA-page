@@ -26,7 +26,7 @@
             <div class="w-full flex justify-end max-w-6xl mx-auto">
                 <img
                     class="image-width w-full h-36 object-cover no-reped"
-                    src="../../../images/image-1.png "
+                    src="../../../images/image-1.jpg "
                     alt=""
                 />
             </div>
@@ -57,7 +57,7 @@
             <div class="w-full flex justify-start">
                 <img
                     class="image-width w-full h-36 object-cover no-reped"
-                    src="../../../images/image-2.png "
+                    src="../../../images/image-2.jpg "
                     alt=""
                 />
             </div>
@@ -88,7 +88,7 @@
             <div class="w-full flex justify-end">
                 <img
                     class="image-width w-full h-36 object-cover"
-                    src="../../../images/image-3.png "
+                    src="../../../images/image-3.jpg "
                     alt=""
                 />
             </div>
