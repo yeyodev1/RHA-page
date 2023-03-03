@@ -53,7 +53,7 @@
                 <div class="w-full mt-4">
                     <p class="text-xs text-whiteRHA sm:text-base">
                         Ser una empresa líder que brinda servicios aduaneros, de
-                        logístiva y transporte con la flexibilidad pertinente a
+                        logística y transporte con la flexibilidad pertinente a
                         la necesidad de cada uno de nuestros clientes
                     </p>
                 </div>
