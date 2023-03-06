@@ -1,25 +1,34 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 
 // COMPONENTS
-import Home from "../views/Home.vue";
-import services from "../views/Services.vue";
+import Index from "../views/Index.vue";
 
 const routes = [
     {
         path: "/",
         name: "home",
-        component: Home,
+        component: Index,
     },
     {
         path: "/servicios",
         name: "servicios",
-        component: services,
+        component: () => import("./../views/Services.vue"),
     },
 ];
-
 const router = createRouter({
-    history: createWebHashHistory(),
+    history: createWebHistory(),
     routes,
+    scrollBehavior(to, from, savedPosition) {
+        if (to.hash) {
+            console.log(to.hash);
+            return {
+                el: to.hash,
+                behavior: "smooth",
+                x: 0,
+                y: 0,
+            };
+        }
+    },
 });
 
 export default router;
