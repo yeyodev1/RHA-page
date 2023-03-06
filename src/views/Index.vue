@@ -4,10 +4,10 @@
         <TheHero />
     </div>
     <Menu />
-    <div id="second-background">
+    <section id="second-background">
         <About />
         <OurServices />
-    </div>
+    </section>
     <Contact />
 </template>
 
