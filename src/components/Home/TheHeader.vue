@@ -23,28 +23,22 @@
             class="max-w-7xl w-full mx-auto justify-between px-10 py-5 lg:flex hidden"
         >
             <!-- SPACE WHERE IS THE LOGO -->
-            <div class="w-16 h-9 flex justify-center logo" />
+            <router-link to="/">
+                <div class="px-16 py-4 flex justify-center logo" />
+            </router-link>
             <!-- BUTTONS LINKED TO REST TO THE PAGE -->
-            <div class="flex w-1/4 justify-between color-font">
-                <router-link to="/">
+            <div
+                v-for="option in options"
+                :key="option"
+                class="flex items-center"
+            >
+                <router-link :to="{ name: option.route, hash: option.hash }">
                     <button
                         class="border-b-0 hover:border-b hover:border-secondaryRHA hover:transition-all"
                     >
-                        <p class="color-font font-principal">Nosotros</p>
-                    </button>
-                </router-link>
-                <router-link to="/">
-                    <button
-                        class="border-b-0 hover:border-b hover:border-secondaryRHA hover:transition-all"
-                    >
-                        <p class="color-font font-principal">Servicios</p>
-                    </button>
-                </router-link>
-                <router-link to="/">
-                    <button
-                        class="border-b-0 hover:border-b hover:border-secondaryRHA hover:transition-all"
-                    >
-                        <p class="color-font font-principal">Contacto</p>
+                        <p class="color-font font-principal">
+                            {{ option.name }}
+                        </p>
                     </button>
                 </router-link>
             </div>
@@ -80,12 +74,51 @@ export default {
                 name: "arrowRight",
             },
         ],
+        options: [
+            {
+                name: "Nosotros",
+                route: "home",
+                hash: "#second-background",
+            },
+            {
+                name: "Servicios",
+                route: "servicios",
+                hash: "",
+            },
+            {
+                name: "Contacto",
+                route: "home",
+                hash: "#form",
+            },
+        ],
     }),
 
     methods: {
         ...mapActions("menu", ["activeMenu"]),
         getMenu() {
             this.activeMenu(true);
+        },
+    },
+    mounted() {
+        const anchor = this.$router.currentRoute._value.hash;
+        this.$nextTick(() => {
+            if (anchor && document.querySelector(anchor)) {
+                location.href = anchor;
+            }
+        });
+    },
+    watch: {
+        $route(to, from) {
+            if (to.hash) {
+                if (to.hash !== from.hash) {
+                    const anchor = to.hash;
+                    this.$nextTick(() => {
+                        if (anchor && document.querySelector(anchor)) {
+                            location.href = anchor;
+                        }
+                    });
+                }
+            }
         },
     },
 };
