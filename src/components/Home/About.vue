@@ -1,6 +1,7 @@
 <template>
     <the-delivery />
     <div
+        id="second-background"
         class="flex flex-col md:flex-row-reverse md:w-4/5 md:mx-auto md:justify-start md:items-center max-w-6xl md:relative"
     >
         <div
