@@ -21,11 +21,15 @@
                 v-for="(item, index) in menu"
                 :key="index"
             >
-                <a :href="item.link">
-                    <button class="w-16 h-9 text-whiteRHA text-2xl sm:text-4xl">
+                <router-link :to="item.link">
+                    <button
+                        class="w-16 h-9 text-whiteRHA text-2xl sm:text-4xl"
+                        :class="isClosed"
+                        @click="closeMenu"
+                    >
                         {{ item.name }}
                     </button>
-                </a>
+                </router-link>
             </div>
             <div class="w-full pt-12 flex justify-center items-center">
                 <router-link to="/servicios">
@@ -53,15 +57,15 @@ export default {
         menu: [
             {
                 name: "nosotros",
-                link: "",
+                link: "/#second-background",
             },
             {
                 name: "servicios",
-                link: "",
+                link: "/servicios",
             },
             {
                 name: "contacto",
-                link: "",
+                link: "/#form",
             },
         ],
     }),
@@ -70,6 +74,9 @@ export default {
         ...mapGetters("menu", ["showMenu"]),
         isShown() {
             return !this.showMenu ? "left-full" : "left-0";
+        },
+        isClosed() {
+            return this.showMenu ? "left-full" : "left-0";
         },
     },
 
