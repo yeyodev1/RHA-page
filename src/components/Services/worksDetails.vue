@@ -4,7 +4,7 @@
       class="w-full pb-10 flex flex-col sm:flex-row sm:px-11 max-w-6xl mx-auto"
     >
       <div
-        class="w-4/5 mx-auto pt-8 sm:px-9 flex flex-col justify-center max-w-6xl backdrop-blur-md rounded-xl"
+        class="w-4/5 mx-auto sm:px-9 flex flex-col justify-center max-w-6xl backdrop-blur-md rounded-xl"
       >
         <div class="pt-5 mb-3">
           <h4
@@ -64,9 +64,11 @@
       </div>
     </div>
     <div
-      class="w-full pb-10 sm:pb-0 flex flex-col sm:flex-row sm:px-11 max-w-6xl mx-auto backdrop-blur-md"
+      class="w-full pb-10 sm:pb-0 flex flex-col sm:flex-row sm:px-11 max-w-6xl mx-auto"
     >
-      <div class="w-4/5 mx-auto pt-8 sm:px-9 flex flex-col justify-center">
+      <div
+        class="w-4/5 mx-auto pt-8 sm:px-9 flex flex-col justify-center backdrop-blur-md"
+      >
         <div class="pt-5 mb-3">
           <h4
             class="text-blackRHA font-principal font-semibold text-base sm:text-3xl"
