@@ -4,7 +4,7 @@
       class="w-full pb-10 flex flex-col sm:flex-row sm:px-11 max-w-6xl mx-auto"
     >
       <div
-        class="w-4/5 mx-auto sm:px-9 flex px-4 flex-col justify-center max-w-6xl backdrop-blur-md rounded-xl"
+        class="w-4/5 mx-auto sm:px-9 flex px-4 flex-col justify-center max-w-6xl background-card rounded-xl"
       >
         <div class="pt-5 mb-3">
           <h4
@@ -37,22 +37,27 @@
       class="w-full sm:pt-2 pb-10 flex flex-col sm:flex-row-reverse sm:pr-8 sm:pl-24 max-w-6xl mx-auto"
     >
       <div
-        class="w-4/5 mx-auto px-4 flex flex-col justify-center backdrop-blur-md rounded-xl"
+        class="w-4/5 mx-auto px-4 flex flex-col justify-center rounded-xl background-card"
       >
         <div class="mb-3">
           <h4
-            class="text-blackRHA font-principal font-semibold text-base sm:text-3xl lg:"
+            class="text-blackRHA font-principal font-semibold text-base sm:text-3xl"
           >
             Trámites aduaneros
           </h4>
         </div>
         <div class="pb-3">
           <p class="font-principal text-blackRHA text-base">
-            "Asesoramiento en aplicación de partidas arancelarias, consultas
-            legales y de aforo para todos nuestros clientes. Asesoramiento en
-            aplicación de partidas arancelarias, consultas legales y de aforo
-            para todos nuestros clientes."
+            Nos encargamos de toda la gestión de Documentación de Certificados
+            para las exportaciones de nuestros clientes. En el caso de la
+            importación, asesoramos a nuestros clientes de la Documentación y
+            Certificados necesarios para cada tipo de mercancía.
           </p>
+          <div v-for="process in processes" :key="process">
+            <li class="text-blackRHA font-principal text-base">
+              {{ process.name }}
+            </li>
+          </div>
         </div>
       </div>
       <div class="w-full flex justify-start">
@@ -67,7 +72,7 @@
       class="w-full pb-10 sm:pb-0 flex flex-col sm:flex-row sm:px-11 max-w-6xl mx-auto"
     >
       <div
-        class="w-4/5 mx-auto sm:px-9 flex flex-col justify-center backdrop-blur-md"
+        class="w-4/5 mx-auto sm:px-9 flex flex-col justify-center background-card"
       >
         <div class="mb-3">
           <h4
@@ -96,6 +101,27 @@
   </div>
 </template>
 
+<script>
+export default {
+  data: () => ({
+    processes: [
+      {
+        name: "Certificación de origen",
+      },
+      {
+        name: "Certificación de calidad comercial (SOIVRE)",
+      },
+      {
+        name: "Certificación fitosanitaria",
+      },
+      {
+        name: "Certificación CITES",
+      },
+    ],
+  }),
+};
+</script>
+
 <style scoped>
 .image-width {
   width: 300px;
@@ -111,5 +137,8 @@
     width: 25.75rem;
     height: 25.938rem;
   }
+}
+.background-card {
+  background: rgba(200, 225, 225, 0.5);
 }
 </style>
