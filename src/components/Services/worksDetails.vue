@@ -72,21 +72,22 @@
       class="w-full pb-10 sm:pb-0 flex flex-col sm:flex-row sm:px-11 max-w-6xl mx-auto"
     >
       <div
-        class="w-4/5 mx-auto sm:px-9 flex flex-col justify-center background-card"
+        class="w-4/5 mx-auto sm:px-9 flex flex-col justify-center background-card rounded-xl"
       >
         <div class="mb-3">
           <h4
             class="text-blackRHA font-principal font-semibold text-base sm:text-3xl"
           >
-            Logística Local
+            Logística total
           </h4>
         </div>
         <div class="pb-3">
           <p class="font-principal text-blackRHA text-base">
-            Asesoramiento en aplicación de partidas arancelarias, consultas
-            legales y de aforo para todos nuestros clientes. Asesoramiento en
-            aplicación de partidas arancelarias, consultas legales y de aforo
-            para todos nuestros clientes.
+            Ofrecemos servicios completos de logística nacional e internacional,
+            desde el punto de origen hasta el destino final, a través de una red
+            de agentes y empresas de transporte marítimo, terrestre y aéreo en
+            todo el mundo. Además, garantizamos que su mercancía siempre estará
+            asegurada gracias a nuestros servicios de gestión de seguros.
           </p>
         </div>
       </div>
