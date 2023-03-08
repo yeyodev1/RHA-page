@@ -20,7 +20,7 @@
       class="lg:max-w-6xl mt-12 flex flex-col sm:flex-row sm:w-full sm:overflow-scroll lg:overflow-hidden justify-center sm:items-start sm:justify-start"
     >
       <div
-        class="sm:flex sm:px-8 lg:mx-auto"
+        class="sm:flex sm:px-8 lg:px-0 lg:mx-auto"
         v-for="(service, index) in services"
         :key="index"
       >
