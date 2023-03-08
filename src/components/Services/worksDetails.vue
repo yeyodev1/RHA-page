@@ -4,7 +4,7 @@
       class="w-full pb-10 flex flex-col sm:flex-row sm:px-11 max-w-6xl mx-auto"
     >
       <div
-        class="w-4/5 mx-auto sm:px-9 flex flex-col justify-center max-w-6xl backdrop-blur-md rounded-xl"
+        class="w-4/5 mx-auto sm:px-9 flex px-4 flex-col justify-center max-w-6xl backdrop-blur-md rounded-xl"
       >
         <div class="pt-5 mb-3">
           <h4
@@ -37,9 +37,9 @@
       class="w-full sm:pt-2 pb-10 flex flex-col sm:flex-row-reverse sm:pr-8 sm:pl-24 max-w-6xl mx-auto"
     >
       <div
-        class="w-4/5 mx-auto pt-8 sm:px-9 flex flex-col justify-center backdrop-blur-md rounded-xl"
+        class="w-4/5 mx-auto px-4 flex flex-col justify-center backdrop-blur-md rounded-xl"
       >
-        <div class="pt-5 mb-3">
+        <div class="mb-3">
           <h4
             class="text-blackRHA font-principal font-semibold text-base sm:text-3xl lg:"
           >
@@ -67,9 +67,9 @@
       class="w-full pb-10 sm:pb-0 flex flex-col sm:flex-row sm:px-11 max-w-6xl mx-auto"
     >
       <div
-        class="w-4/5 mx-auto pt-8 sm:px-9 flex flex-col justify-center backdrop-blur-md"
+        class="w-4/5 mx-auto sm:px-9 flex flex-col justify-center backdrop-blur-md"
       >
-        <div class="pt-5 mb-3">
+        <div class="mb-3">
           <h4
             class="text-blackRHA font-principal font-semibold text-base sm:text-3xl"
           >
