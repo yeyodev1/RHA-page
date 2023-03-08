@@ -34,7 +34,7 @@
     <div
       class="w-28 h-9 sm:w-36 sm:h-12 bg-secondaryRHA flex justify-center items-center rounded-md mt-12"
     >
-      <router-link to="/servicios">
+      <router-link :to="{ path: '/servicios', hash: '#background-1' }">
         <button
           class="w-full h-9 text-whiteRHA flex justify-center items-center"
         >
@@ -57,6 +57,8 @@ export default {
   data: () => ({
     // ICONS
     arrowRight: "arrowRight",
+    // HASH
+    hash: "#background-1",
     // SERVICES WITH THE CORRECT PROPS ESTABLISHED
     services: [
       {
@@ -79,5 +81,6 @@ export default {
       },
     ],
   }),
+  methods: {},
 };
 </script>
