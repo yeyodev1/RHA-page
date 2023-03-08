@@ -37,7 +37,7 @@
       class="w-full sm:pt-2 pb-10 flex flex-col sm:flex-row-reverse sm:pr-8 sm:pl-24 max-w-6xl mx-auto"
     >
       <div
-        class="w-4/5 mx-auto px-4 flex flex-col justify-center rounded-xl background-card"
+        class="w-4/5 mx-auto px-4 flex flex-col justify-center rounded-xl background-card mb-5 sm:mb-0"
       >
         <div class="mb-3">
           <h4
@@ -72,7 +72,7 @@
       class="w-full pb-10 sm:pb-0 flex flex-col sm:flex-row sm:px-11 max-w-6xl mx-auto"
     >
       <div
-        class="w-4/5 mx-auto sm:px-9 flex flex-col justify-center background-card rounded-xl"
+        class="w-4/5 mx-auto sm:px-9 flex flex-col justify-center background-card rounded-xl p-5 sm:p-0 mb-5 sm:mb-0"
       >
         <div class="mb-3">
           <h4
