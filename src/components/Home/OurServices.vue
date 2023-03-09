@@ -63,21 +63,21 @@ export default {
     services: [
       {
         image: "../../../images/image-1.jpg",
-        name: "Agendamiento de aduana",
+        name: "Procesos de Importación y Exportación",
         description:
-          "Asesoramiento en aplicación de partidas arancelarias, consultas legales y de aforo para todos nuestros clientes",
+          "Ofrecemos servicios de gestión de importaciones a consumo de mercancías extranjeras, asegurándonos de cumplir con todas las formalidades y obligaciones aduaneras para garantizar la libre circulación de los productos.",
       },
       {
         image: "../../../images/image-2.jpg",
-        name: "Agendamiento de aduana",
+        name: "Trámites aduaneros",
         description:
-          "Asesoramiento en aplicación de partidas arancelarias, consultas legales y de aforo para todos nuestros clientes",
+          "Nos encargamos de toda la gestión de Documentación de Certificados para las exportaciones de nuestros clientes.",
       },
       {
         image: "../../../images/image-3.jpg",
-        name: "Agendamiento de aduana",
+        name: "Logística total",
         description:
-          "Asesoramiento en aplicación de partidas arancelarias, consultas legales y de aforo para todos nuestros clientes",
+          "Ofrecemos servicios completos de logística nacional e internacional,          desde el punto de origen hasta el destino final, a través de una red de agentes y empresas de transporte marítimo, terrestre y aéreo en todo el mundo.",
       },
     ],
   }),
