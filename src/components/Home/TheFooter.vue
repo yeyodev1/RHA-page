@@ -59,7 +59,7 @@
           </div>
           <div>
             <p class="text-xs sm:text-sm font-principal">
-              autorizados por ADUANA DEL ECUADOR
+              Autorizados por ADUANA DEL ECUADOR
             </p>
           </div>
         </div>
