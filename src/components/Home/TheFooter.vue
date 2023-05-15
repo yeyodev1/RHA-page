@@ -23,8 +23,16 @@
             </a>
           </div>
           <div class="w-full px-3 sm:px-4 flex pt-6 sm:pt-7">
-            <Instagram class="w-5 h-5" />
-            <Facebook class="w-5 h-5 pl-4" />
+            <a
+              href="https://www.instagram.com/reyesehijos/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Instagram class="w-5 h-5" />
+            </a>
+            <a href="https://www.facebook.com/reyesehijosasociados/">
+              <Facebook class="w-5 h-5 pl-4" />
+            </a>
           </div>
         </div>
       </div>
