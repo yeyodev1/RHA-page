@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-grayRHA">
+  <div class="bg-grayRHA pb-6">
     <div class="max-w-7xl mx-auto">
       <div class="w-full bg-grayRHA flex-col px-8">
         <div class="w-4/5 border-l border-secondaryRHA">
@@ -15,7 +15,7 @@
             <a href="https://goo.gl/maps/aRkdpF6AVSBqgkHq6" target="_blank">
               <button class="flex flex-row font-principal font-thin">
                 <location />
-                <div class="flex">
+                <div class="flex pl-2">
                   <div class="mr-1">Oficina</div>
                   <div>Principal</div>
                 </div>
@@ -40,24 +40,28 @@
         class="w-full bg-grayRHA flex justify-between pt-12 sm:pt-24 px-1 sm:px-7 max-w-7xl"
       >
         <div class="flex justify-center items-center">
-          <div class="flex justify-center items-center">
-            <Maverick />
+          <div class="flex justify-center items-center mr-3">
+            <Yeyodev />
           </div>
 
-          <a href="https://www.somosmaverick.com/">
+          <a href="https://www.yeyo.dev/" target="_blank">
             <p class="text-xs sm:text-sm font-principal">
-              With love, Maverick <br />
+              With love, Yeyodev <br />
               2022
             </p>
           </a>
         </div>
         <div class="flex justify-center items-center">
           <div class="flex justify-center items-center">
-            <Copy />
+            <figure class="w-10 h-10 flex justify-center items-center">
+              <img src="../../static/senae-logo.png" alt="" />
+            </figure>
           </div>
-          <p class="text-xs sm:text-sm font-principal">
-            Todos los derechos reservados
-          </p>
+          <div>
+            <p class="text-xs sm:text-sm font-principal">
+              autorizados por ADUANA DEL ECUADOR
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -67,7 +71,7 @@
 <script>
 // ICONS AS ASV
 import Copy from "../Global/Icons/Copyright.vue";
-import Maverick from "../Global/Icons/Maverick.vue";
+import Yeyodev from "../Global/Icons/Yeyodev.vue";
 import Facebook from "../Global/Icons/Facebook.vue";
 import Instagram from "../Global/Icons/Instagram.vue";
 import Location from "../Global/Icons/Location.vue";
@@ -78,7 +82,7 @@ export default {
     Location,
     Facebook,
     Instagram,
-    Maverick,
+    Yeyodev,
     Copy,
   },
   data: () => ({}),
