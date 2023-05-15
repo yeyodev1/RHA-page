@@ -37,7 +37,7 @@
         </div>
       </div>
       <div
-        class="w-full bg-grayRHA flex justify-between pt-12 sm:pt-24 px-1 sm:px-7 max-w-7xl"
+        class="w-full bg-grayRHA flex justify-between pt-12 sm:pt-24 sm:px-7 px-4 max-w-7xl"
       >
         <div class="flex justify-center items-center">
           <div class="flex justify-center items-center mr-3">
@@ -59,7 +59,7 @@
           </div>
           <div>
             <p class="text-xs sm:text-sm font-principal">
-              Autorizados por ADUANA DEL ECUADOR
+              Autorizados por <br />ADUANA DEL ECUADOR
             </p>
           </div>
         </div>
@@ -88,3 +88,11 @@ export default {
   data: () => ({}),
 };
 </script>
+
+<style scoped>
+@media (min-width: 600px) {
+  br {
+    display: none;
+  }
+}
+</style>
