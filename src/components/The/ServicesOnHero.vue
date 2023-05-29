@@ -1,6 +1,6 @@
 <template>
   <div class="w-full text">
-    <p :id="getId" class="sm:text-3xl text-whiteRHA font-principal">
+    <p :id="getId" class="text-center sm:text-3xl text-whiteRHA font-principal">
       {{ service }}
     </p>
   </div>
