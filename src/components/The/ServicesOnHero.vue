@@ -1,11 +1,8 @@
 <template>
-  <div class="w-full">
-    <!-- SERVICE DETAILS SECTION -->
-    <div :id="getId" class="">
-      <p class="text-3xl sm:text-5xl text-whiteRHA font-principal">
-        {{ service }}
-      </p>
-    </div>
+  <div class="w-full text">
+    <p :id="getId" class="sm:text-3xl text-whiteRHA font-principal">
+      {{ service }}
+    </p>
   </div>
 </template>
 
@@ -29,3 +26,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.text {
+  overflow-wrap: break-word;
+}
+</style>
